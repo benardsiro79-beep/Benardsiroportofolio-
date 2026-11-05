@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Profile - Your Name</title>
+<title>My Profile - Benard Siro</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
   body{background:#f4f4f9;color:#333}
@@ -28,8 +28,8 @@
   <!-- PROFILE -->
   <div class="header">
     <!-- Change this image to your photo -->
-    <img src="https://via.placeholder.com/150" alt="My Photo">
-    <h1>YOUR NAME HERE</h1>
+    <img src="https://via.placeholder.com/150" alt="Photo of Benard Siro">
+    <h1>Benard Siro</h1>
     <p>BIT Student | Kisii University | Web Developer</p>
     <p>📍 Kisii, Kenya</p>
   </div>
@@ -49,26 +49,23 @@
 
   <div class="section">
     <h2>Contact Me</h2>
-    <p>📧 Email: <b>yourname@gmail.com</b></p>
-    <p>📞 Phone: <b>+254 7XX XXX XXX</b></p>
-    <a class="btn" href="mailto:yourname@gmail.com">Send Email</a>
-    <a class="btn green" href="https://wa.me/2547XXXXXXXX">WhatsApp Me</a>
+    <p>📧 Email: <b>benardsiro79@gmail.com</b></p>
+    <a class="btn" href="mailto:benardsiro79@gmail.com">Send Email</a>
   </div>
 
   <div class="section">
     <h2>Send Me a Message</h2>
     <!-- This form will send to your email using FormSubmit - FREE -->
-    <form action="https://formsubmit.co/yourname@gmail.com" method="POST">
+    <form action="https://formsubmit.co/benardsiro79@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
       <input type="hidden" name="_captcha" value="false">
       <button type="submit">Send Message</button>
     </form>
-    <p style="font-size:12px;margin-top:8px;">* Replace yourname@gmail.com in the form with your real email</p>
   </div>
 
-  <div class="footer">© 2026 Your Name | Kisii University</div>
+  <div class="footer">© 2026 Benard Siro | Kisii University</div>
 </div>
 
 </body>
