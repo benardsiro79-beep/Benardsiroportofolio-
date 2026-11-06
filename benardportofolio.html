@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BIT 202 - Lab Exercise 2</title>
+<style>
+  body{font-family:Arial; margin:20px;}
+  h2{text-align:center;}
+  /* For Question 2 */
+  .main{border:1px solid #1a7ab5; padding:20px; margin-top:20px;}
+  fieldset{border:1px solid #a8c8e0; margin:10px; padding:15px;}
+  legend{font-weight:bold;}
+  table.form-table td{padding:6px;}
+  input, select{padding:5px; width:220px; border:1px solid #a8c8e0;}
+  .btn{background:#1e90d6; color:white; border:none; padding:8px 15px; font-weight:bold; cursor:pointer; width:auto;}
+  .footer{background:#0d7cc1; color:white; text-align:center; padding:8px; margin-top:10px;}
+  h3{color:#1e90d6; text-align:center; margin:0;}
+  hr{margin:40px 0;}
+</style>
+</head>
+<body>
+
+<!-- ================= QUESTION 1 ================= -->
+<h2>Question 1: My Tech Stock Pick Table</h2>
+
+<table border="1" width="100%" cellpadding="5" cellspacing="0">
+  <!-- TITLE ROW -->
+  <tr>
+    <td colspan="4" align="center">
+      <h1><i>My tech stock pick</i></h1>
+      <hr>
+    </td>
+  </tr>
+
+  <!-- HEADER ROW 1 -->
+  <tr>
+    <td bgcolor="#ADD8E6"></td>
+    <td bgcolor="#00B050"><font color="red">Symbol</font></td>
+    <td bgcolor="#ADD8E6"></td>
+    <td bgcolor="#00B050"><font color="red">Contact</font></td>
+  </tr>
+
+  <!-- HEADER ROW 2 -->
+  <tr>
+    <td><font color="red"><b>Name</b></font></td>
+    <td></td>
+    <td align="center">Images</td>
+    <td></td>
+  </tr>
+
+  <!-- MICROSOFT ROW -->
+  <tr>
+    <td>Microsofti</td>
+    <td>MSFT</td>
+    <td align="center"><img src="laptop.jpg" width="180" height="120" alt="Laptop"></td>
+    <td>
+      <ul>
+        <li><u>Email:</u> microsofti@mc.se</li>
+        <li>&copy;2013 <b>Microsoft</b> Corporation</li>
+      </ul>
+      <ol type="i">
+        <li>Email: microsofti@mc.se</li>
+        <li>&copy;2026 <b>Microsoft</b> Corporation</li>
+      </ol>
+    </td>
+  </tr>
+
+  <!-- CISCO ROW - Part 1 -->
+  <tr>
+    <td rowspan="2">Cisco Systems</td>
+    <td rowspan="2">CSCO</td>
+    <td rowspan="2" align="center"><img src="switch.jpg" width="180" height="100" alt="Switch"></td>
+    <td><b>Switch</b></td>
+  </tr>
+
+  <!-- CISCO ROW - Part 2 -->
+  <tr>
+    <td><a href="http://www.uk.hardware.info">www.uk.hardware.info</a></td>
+  </tr>
+
+  <!-- FOOTER ROW -->
+  <tr>
+    <td colspan="4" align="center">
+      <h2><i>&copy;BIT 202</i></h2>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- ================= QUESTION 2 ================= -->
+<h2>Question 2: Registration Interface</h2>
+
+<div class="main">
+<form>
+<h3>Step 1 of 5</h3>
+
+<fieldset>
+<legend>Personal Information</legend>
+<table class="form-table">
+  <tr><td>Sur Name</td><td><input type="text" name="surname"></td></tr>
+  <tr><td>First Name</td><td><input type="text" name="firstname"></td></tr>
+  <tr><td>Other Names</td><td><input type="text" name="othernames"></td></tr>
+  <tr><td>Gender</td><td>
+    <input type="radio" name="gender" value="Male" style="width:auto;"> Male
+    <input type="radio" name="gender" value="Female" style="width:auto;"> Female
+  </td></tr>
+  <tr><td>Marital Status</td><td>
+    <select name="marital">
+      <option>Select - Status</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+    </select>
+  </td></tr>
+  <tr><td>Date of Birth</td><td><input type="text" name="dob"></td></tr>
+  <tr><td>Place of Birth</td><td><input type="text" name="pob"></td></tr>
+  <tr><td>Mothers Name</td><td><input type="text" name="mother"></td></tr>
+  <tr><td>fathers Name</td><td><input type="text" name="father"></td></tr>
+  <tr><td>number of Dependants</td><td>
+    <select name="dependants">
+      <option>Select - No of Dependants</option>
+      <option>0</option><option>1</option><option>2</option>
+      <option>3</option><option>4</option><option>5</option>
+    </select>
+  </td></tr>
+  <tr><td>level of Education</td><td><input type="text" name="education"></td></tr>
+</table>
+
+<fieldset>
+<legend>Security Information</legend>
+<table class="form-table">
+  <tr><td>UserName</td><td><input type="text" name="username"></td></tr>
+  <tr><td>Password</td><td><input type="password" name="password"></td></tr>
+  <tr><td>Re-type Password</td><td><input type="password" name="repassword"></td></tr>
+  <tr><td>Security Question</td><td>
+    <select name="question">
+      <option>Select - Question</option>
+      <option>What is your mothers name?</option>
+      <option>What is your pet name?</option>
+      <option>Where were you born?</option>
+    </select>
+  </td></tr>
+  <tr><td>Answer</td><td><input type="text" name="answer"></td></tr>
+</table>
+</fieldset>
+
+<div align="center">
+  <input type="button" value="Previous" class="btn">
+  <input type="submit" value="Next" class="btn">
+</div>
+
+</fieldset>
+</form>
+
+<div class="footer">Copyright &copy; 2011 all rights reserved</div>
+</div>
+
+</body>
+</html>
